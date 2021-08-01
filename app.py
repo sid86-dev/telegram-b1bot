@@ -2,6 +2,7 @@ import logging
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from prsaw import RandomStuffV2
+from keep_alive import keep_alive
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -71,4 +72,5 @@ def main():
 
 
 if __name__ == '__main__':
+    keep_alive()
     main()
